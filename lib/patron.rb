@@ -10,6 +10,7 @@ class Patron
   end
 
   def add_interest(interest)
+    return if @interests.include?(interest)
     @interests << interest
   end
 end
